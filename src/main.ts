@@ -2,11 +2,11 @@ import { NestFactory } from '@nestjs/core';
 import { AppModule } from './app.module';
 
 async function bootstrap() {
-  const app = await NestFactory.create(AppModule, { cors: true });
+  const app = await NestFactory.create(AppModule);
 
   app.enableCors({
     origin: [
-    'https://dewcntd.github.io',
+    'https://dewscntd.github.io/reflectiz-ui/',
     ],
     methods: ["GET", "POST"],
   });
